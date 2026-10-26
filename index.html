@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jenifer - Developer Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #013941;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #0a4048 0%, #147e9b 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        section {
+            margin-bottom: 40px;
+        }
+        
+        h2 {
+            color: #0d2f39;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            border-bottom: 2px solid #046a7f;
+            padding-bottom: 10px;
+        }
+        
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+        }
+        
+        .skill-card {
+            background: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .skill-card h3 {
+            color: #0e8392;
+            margin-bottom: 10px;
+        }
+        
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        .project-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .project-header {
+            background: #1f6367;
+            color: white;
+            padding: 15px;
+        }
+        
+        .project-body {
+            padding: 20px;
+        }
+        
+        .project-body h3 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        .project-body p {
+            color: #666;
+            margin-bottom: 10px;
+        }
+        
+        .tags {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+        
+        .tag {
+            background: #f4f4f4;
+            color: #0db8ce;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+        
+        .contact {
+            background: #f4f4f4;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .contact input, .contact textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-family: inherit;
+        }
+        
+        .contact button {
+            background: #01313e;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        
+        .contact button:hover {
+            background: #01232c;
+        }
+        
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Jenifer V S</h1>
+        <p>Frontend Developer | Building Beautiful Web Experiences | B.E Computer Science Student</p>
+    </header>
+    
+    <div class="container">
+        <!-- About Section -->
+        <section>
+            <h2>About Me</h2>
+            <p>Hi! I'm Jenifer V S, First year B.E Computer Science student and a passionate frontend developer learning to create responsive and interactive web applications. I'm currently focusing on mastering HTML, CSS, and JavaScript to build modern web experiences.</p>
+        </section>
+        
+        <!-- Skills Section -->
+        <section>
+            <h2>Skills</h2>
+            <div class="skills">
+                <div class="skill-card">
+                    <h3>HTML5</h3>
+                    <p>Semantic markup</p>
+                </div>
+                <div class="skill-card">
+                    <h3>CSS3</h3>
+                    <p>Responsive design</p>
+                </div>
+                <div class="skill-card">
+                    <h3>JavaScript</h3>
+                    <p>DOM manipulation</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Responsive Design</h3>
+                    <p>Mobile-first approach</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Projects Section -->
+        <section>
+            <h2>Projects</h2>
+            <div class="projects">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Todo App</h3>
+                    </div>
+                    <div class="project-body">
+                        <p>A simple and interactive todo list application where users can add, delete, and mark tasks as complete.</p>
+                        <div class="tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Weather App</h3>
+                    </div>
+                    <div class="project-body">
+                        <p>A weather application that fetches data from a public API and displays current weather conditions with a clean UI.</p>
+                        <div class="tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">API</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Calculator</h3>
+                    </div>
+                    <div class="project-body">
+                        <p>A fully functional calculator with a modern design supporting basic arithmetic operations.</p>
+                        <div class="tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section>
+            <h2>Get In Touch</h2>
+            <div class="contact">
+                <form>
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea rows="5" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Jenifer. All rights reserved.</p>
+    </footer>
+</body>
+</html>
